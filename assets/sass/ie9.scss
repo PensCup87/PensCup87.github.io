@@ -1,38 +1,113 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	ZeroFour by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Basic */
+/* Type */
 
-	.button {
-		background-image: url('images/ie/grad0-20.svg');
+	h1 {
+		&.major {
+			&:after {
+				background: _palette(accent3);
+			}
+		}
 	}
 
-	.box-feature1 header.second {
-		left: 0;
+/* Wrapper */
+
+	.wrapper {
+		&.fullscreen {
+			min-height: 0;
+			padding-bottom: 6em;
+			padding-top: 6em;
+
+			body.is-ie & {
+				height: auto;
+			}
+		}
 	}
 
-/* Wrappers	*/
+/* Spotlights */
 
-	#footer-wrapper,
-	#header .inner {
-		background-image: url('images/ie/grad0-35.svg');
+	.spotlights {
+		> section {
+			padding-left: 20em;
+			position: relative;
+
+			> .image {
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 20em;
+			}
+
+			> .content {
+				width: 100%;
+			}
+		}
 	}
 
-/* Nav */
+/* Features */
 
-	.dropotron {
-		background-image: url('images/ie/grad35-0.svg');
+	.features {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		section {
+			float: left;
+		}
 	}
 
-/* Mobile UI */
+/* Split */
 
-	#titleBar, #navPanel {
-		background-image: url('images/ie/grad0-35.svg');
+	.split {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> * {
+			float: left;
+		}
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		nav {
+			a {
+				&:after {
+					background-color: _palette(accent3);
+				}
+			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+
+		> .title {
+			float: left;
+		}
+
+		> nav {
+			float: right;
+		}
 	}

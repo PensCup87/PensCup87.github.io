@@ -1,0 +1,25 @@
+﻿body {
+
+}
+
+.wrapper.style1{
+   background-image: url('images/bannerCover.jpg') !important;
+   background-size:cover;
+   background-color: #CF5300 ;
+}
+/*.inner{
+    background-color: #CF5300 ;
+}*/
+
+#sidebar{
+   background:black;
+}
+.wrapper.style2{
+   background-color: #555555 ;
+}
+.wrapper.style3{
+   background-color: #005b96 ;
+}
+.wrapper.style1-alt{
+    background-color:black;
+}
